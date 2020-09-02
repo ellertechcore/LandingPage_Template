@@ -1,0 +1,314 @@
+﻿/*
+    #56A3A6 //Darker pastel teal; cadet blue
+*/
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.closeBtn {
+    text-align: center;
+    height: 23px;
+    width: 23px;
+    background-color: #e8ebee;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    text-decoration: none;
+    color: #c4c4c4;
+    /*box-shadow: 2px 2px 10px #888888;*/
+}
+
+    .closeBtn:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #c4c4c4;
+        background-color: #e3e3e3;
+    }
+
+.minimizeBtn {
+    text-align: center;
+    height: 23px;
+    width: 23px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    text-decoration: none;
+    color: #a19f9f;
+    /*box-shadow: 2px 2px 10px #888888;*/
+}
+
+    .minimizeBtn:hover {
+        text-decoration: none;
+        color: #a19f9f;
+        cursor: pointer;
+        background-color: #cccccc;
+    }
+
+#DataPanel {
+    position: absolute;
+    left: 340px;
+    bottom: 38px;
+    z-index: 2;
+    width: 280px;
+    box-shadow: 2px 2px 10px #888888;
+    background: #fff;
+    border: solid;
+    border-width: thin;
+    height: auto !important;
+    padding: 15px;
+}
+
+#DataPanel span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#DataEntries {
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#DataEntries > * {
+    margin: 5px;
+}
+
+#ControlPanel {
+    position: absolute;
+    left: 38px;
+    bottom: 38px;
+    z-index: 2;
+    width: 300px;
+    box-shadow: 2px 2px 10px #888888;
+    background: #fff;
+    border: solid;
+    border-width: thin;
+    height: auto !important;
+    /*padding: 15px;*/
+}
+
+#controlPanelInner {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#ControlPanelTitle {
+    background-color: #e8ebee;
+    padding: 5px;
+    /*opacity: 0.70;*/
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+#ControlPanelFooter {
+    background-color: #e8ebee;
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.radio {
+    width: 120px;
+    margin-right: 5px;
+}
+
+#slider {
+    /*position: absolute;
+    right: 38px;
+    bottom: 38px;*/
+    z-index: 2;
+    margin-top: -5px;
+    /*border: 1px solid red;*/
+}
+
+#yearRange{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    /*border: 1px solid black;
+    height: 20px;*/
+}
+
+#year_min {
+    position: absolute;
+    bottom: 65px;
+}
+
+#year_max {
+    position: absolute;
+    bottom: 65px;
+    right: 20px;
+}
+
+input[type=text], input[type=number] {
+    height: auto !important;
+}
+
+.right {
+    float: right;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+#addbutton {
+    border-radius: 50%;
+    background: url();
+    background-color: #45D645;
+    z-index: 5;
+    box-shadow: 2px 2px 10px #888888;
+    border-width: thin;
+    color: white;
+}
+
+.circleInfoWindow {
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+.noUi-connect {
+    background: #0c234b;
+}
+.mapboxgl-ctrl {
+    position: absolute;
+    right: 15px;
+    top: 50px;
+}
+.mapboxgl-ctrl-geocoder{
+    position: absolute;
+    right: 60px;
+    top: 50px;
+}
+/*#777777*/
+nav, .navbar, .navbar-inverse, .navbar-brand{
+    z-index: 5;
+    background-color: #0c234b;
+    border-radius: 0;
+    border: 0;
+    height: 36px;
+}
+
+    nav li:hover, nav li:active, .navbar-brand:hover, .navbar-brand:active{
+        background-color: #091c3c;
+        cursor: pointer;
+    }
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand > a{
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-brand > a:hover{
+    text-decoration: none;
+}
+
+#value-span, #value-input {
+    padding: 7px;
+    margin: 15px 5px 5px;
+    width: 60px;
+}
+
+.navbar-brand{
+    display: inline-block;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%
+}
+
+#menu {
+    position: absolute;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 2;
+}
+
+#addEvent{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#toggleLines{
+    display: inline-block;
+}
+.form-check-input, .form-check-label {
+    display: inline-block;
+    width: auto;
+}
+#toggle-lines-btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+}
+.clearfix{
+    height: 75px;
+}
+
+.center {
+    margin-left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circleInfoWindow{
+    min-width: 400px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.range-icons {
+    position: absolute;
+    color: #a3a5a8;
+}
+
+    .range-icons:hover {
+        color: #6b6b6b;
+        cursor: pointer;
+    }
+
+#forward{
+    right: 10px;
+}
+
+#backward{
+    left: 10px;
+}
+
+#sequenceValue {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
